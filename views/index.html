@@ -4,48 +4,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Welcome to Glitch!</title>
+    <title>MarkMe!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A cool thing made with Glitch">
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta name="description" content="A simple, yet another markdown to HTML converter.">
+    <link id="favicon" rel="icon" href="https://khaleelgibran.com" type="image/x-icon">
 
-    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
 
-    <!-- import the webpage's client-side javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>A Dream of the Future</h1>
-    </header>
-
-    <main>
-      <h2>Oh hi,</h2>
-
-      <p>Tell me your hopes and dreams:</p>
-
-      <form>
-        <label>
-          New Dream
-          <input name="dream" type="text" maxlength="100" required placeholder="Dreams!">
-        </label>
-        <button type="submit" id="submit-dream">Add Dream</button>
-      </form>
-
-      <section class="dreams">
-        <ul id="dreams">
-          <em>loading dreams&hellip;</em>
-        </ul>
-      </section>
-    </main>
-
-    <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:2em;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+    
+    <div id = "mdel">
+      <button id = "h1" onclick = "insert('h1')">
+        H1
+      </button>
+      <button id = "h2" onclick = "insert('h2')">
+        H2
+      </button>
+      <button id = "h3" onclick = "insert('h3')">
+        H3
+      </button>
+      <button id = "h4" onclick = "insert('h4')">
+        H4
+      </button>
+      <button id = "h5" onclick = "insert('h5')">
+        H5
+      </button>
+      <button id = "h6" onclick = "insert('h6')">
+        H6
+      </button>
+      <button id = "italic" onclick = "insert('italic')">
+        <i>I</i>
+      </button>
+      <button id = "bold" onclick = "insert('bold')">
+        <b>B</b>
+      </button>
+      <button id = "strike" onclick = "insert('strike')">
+        <strike>S</strike>
+      </button>
+      <button id = "ul" onclick = "insert('ul')">
+        ●
+      </button>
+      <button id = "ol" onclick = "insert('ol')">
+        1.
+      </button>
+      
+    </div>
+    
   </body>
 </html>
