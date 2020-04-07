@@ -42,7 +42,7 @@ textarea:click {
 }
 
 #md-html {
-  background-color: var(--test);
+  background-color: var(--background);
   border: none;
   width: 47%;
   resize: none;
@@ -50,10 +50,23 @@ textarea:click {
   overflow-y: hidden;
   font-size: 24px;
   font-family: 'IBM Plex Mono', monospace;
-  border-right: 1px solid yellow;
   outline: none;
   display: inline-block;
   height: 50px;
   flex-direction: column;
   overflow: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  textarea {
+    border: none;
+    display: block;
+    width: 100%;
+  }
+  #md-html {
+    border-top: 1px solid yellow;
+    display: block;
+    width: 100%;
+  }
 }
