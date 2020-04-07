@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
+body {
+  --background: #BFEDEF;
+  --foreground: black;
+  --test: black;
+  background-color: var(--background);
+}
+
 button {
-  background-color: white;
+  background-color: var(--background);
   border: none;
   font-family: monospace;
   font-size: 30px;
@@ -10,15 +19,41 @@ button {
 }
 
 textarea {
-  background-color: none;
+  background-color: var(--background);
   border: none;
   width: 50%;
   resize: none;
   min-height: 700px;
   overflow-y: hidden;
+  font-size: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  border-right: 1px solid yellow;
+  outline: none;
+  display: inline-block;
+}
+
+textarea:click {
+  outline: none;
 }
 
 #mdel {
   padding-bottom: 10px;
   border-bottom: 3px solid yellow; 
+}
+
+#md-html {
+  background-color: var(--test);
+  border: none;
+  width: 47%;
+  resize: none;
+  min-height: 700px;
+  overflow-y: hidden;
+  font-size: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  border-right: 1px solid yellow;
+  outline: none;
+  display: inline-block;
+  height: 50px;
+  flex-direction: column;
+  overflow: auto;
 }
