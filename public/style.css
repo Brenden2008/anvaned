@@ -1,0 +1,24 @@
+button {
+  background-color: white;
+  border: none;
+  font-family: monospace;
+  font-size: 30px;
+  border-bottom: 1px solid yellow;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+textarea {
+  background-color: none;
+  border: none;
+  width: 50%;
+  resize: none;
+  min-height: 700px;
+  overflow-y: hidden;
+}
+
+#mdel {
+  padding-bottom: 10px;
+  border-bottom: 3px solid yellow; 
+}
