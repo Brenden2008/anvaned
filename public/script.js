@@ -71,8 +71,13 @@ function insert(md) {
       charAfter = "`";
       break;
     case "block":
-      charBehind = "```\n"
-      charAfter = "```";
+      charBehind = "```\n";
+      charAfter = "\n```";
+      break;
+    case "hr":
+      charBehind = "---\n";
+      charAfter = "";
+      break;
   }
 
   let start = editor.selectionStart; // editor start

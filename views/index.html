@@ -3,76 +3,87 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>MarkMe!</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A simple, yet another markdown to HTML converter.">
-    <link id="favicon" rel="icon" href="https://khaleelgibran.com" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A simple, yet another markdown to HTML converter."
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://khaleelgibran.com"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="/script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
   <body>
-    
-    <div id = "mdel">
-      <button id = "h1" onclick = "insert('h1')">
+    <div id="mdel">
+      <button id="h1" onclick="insert('h1')">
         H1
       </button>
-      <button id = "h2" onclick = "insert('h2')">
+      <button id="h2" onclick="insert('h2')">
         H2
       </button>
-      <button id = "h3" onclick = "insert('h3')">
+      <button id="h3" onclick="insert('h3')">
         H3
       </button>
-      <button id = "h4" onclick = "insert('h4')">
+      <button id="h4" onclick="insert('h4')">
         H4
       </button>
-      <button id = "h5" onclick = "insert('h5')">
+      <button id="h5" onclick="insert('h5')">
         H5
       </button>
-      <button id = "h6" onclick = "insert('h6')">
+      <button id="h6" onclick="insert('h6')">
         H6
       </button>
-      <button id = "italic" onclick = "insert('italic')">
+      <button id="italic" onclick="insert('italic')">
         <i>I</i>
       </button>
-      <button id = "bold" onclick = "insert('bold')">
+      <button id="bold" onclick="insert('bold')">
         <b>B</b>
       </button>
-      <button id = "strike" onclick = "insert('strike')">
+      <button id="strike" onclick="insert('strike')">
         <strike>S</strike>
       </button>
-      <button id = "ul" onclick = "insert('ul')">
+      <button id="ul" onclick="insert('ul')">
         ●
       </button>
-      <button id = "ol" onclick = "insert('ol')">
+      <button id="ol" onclick="insert('ol')">
         1.
       </button>
-      <button id = "quote" onclick = "insert('quote')">
+      <button id="quote" onclick="insert('quote')">
         &gt;
       </button>
-      <button id = "inline" onclick = "insert('inline')">
+      <button id="inline" onclick="insert('inline')">
         I&lt;&gt;
       </button>
-      <button id = "block" onclick = "insert('block')">
+      <button id="block" onclick="insert('block')">
         &lt;&gt;B
       </button>
-      <button id = "hr" onclick = "insert('hr')">
+      <button id="hr" onclick="insert('hr')">
         ---
       </button>
     </div>
-    
+
     <!-- Add line breaks forever -->
     <br /><br />
-    
-    <textarea id = "md-editor"></textarea>
-    
-    <div id = "md-html">
-      
-    </div>
-    
+
+    <textarea id="md-editor"></textarea>
+
+    <div id="md-html"></div>
   </body>
 </html>
