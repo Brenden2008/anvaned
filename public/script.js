@@ -1,29 +1,46 @@
 var editor = document.getElementById('md-editor');
 
+function convert() {}
 editor.onkeyup = function() {
   var md = this.value;
   console.log(md);
   document.getElementById("md-html").innerHTML = marked(md);
 }
 
-function insertAtCursor(value) {
-  editor.focus();
-  document.execCommand('insertText', false /*no UI*/, value);
-}
+// function insertAtCursor(value) {
+//  editor.focus();
+//  document.execCommand('insertText', false /*no UI*/, value);
+// }
 
 function insert(md) {
+  
+  let charBehind;
+  let charAfter;
+  
   switch (md) {
     case "h1":
-      insertAtCursor('# ');
+      charBehind = '#'
+      charAfter = '';
+      break;
     case "h2":
-      insertAtCursor('## ');
+      charBehind = '##'
+      charAfter = '';
+      break;
     case "h3":
-      insertAtCursor('### ');
+      charBehind = '###'
+      charAfter = '';
+      break;
     case "h4":
-      insertAtCursor('#### ');
+      charBehind = '####'
+      charAfter = '';
+      break;
     case "h5":
-      insertAtCursor('##### ');
+      charBehind = '#####'
+      charAfter = '';
+      break;
     case "h6":
-      insertAtCursor('###### ');
+      charBehind = '######'
+      charAfter = ''
+      break;
   }
 }
