@@ -7,6 +7,7 @@
     <title>MarkMe!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/script.js" defer></script>
     <meta
       name="description"
       content="A simple, yet another markdown to HTML converter."
@@ -17,18 +18,8 @@
       href="https://khaleelgibran.com"
       type="image/x-icon"
     />
-
     <link rel="stylesheet" href="/style.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="/script.js" defer></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
+    <link href="themes/prism.css" rel="stylesheet" />
   </head>
   <body>
     <div id="mdel">
@@ -88,5 +79,8 @@
     <textarea id="md-editor"></textarea>
 
     <div id="md-html"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="prism.js"></script>
   </body>
 </html>
