@@ -78,6 +78,12 @@ function insert(md) {
       charBehind = "---\n";
       charAfter = "";
       break;
+    case "a":
+      charBehind = "[";
+      charAfter = "]()";
+      break;
+    default:
+      console.error("Unknown markdown character!")
   }
 
   let start = editor.selectionStart; // editor start
