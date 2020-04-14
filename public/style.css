@@ -28,7 +28,7 @@ textarea {
   overflow-y: hidden;
   font-size: 24px;
   font-family: 'IBM Plex Mono', monospace;
-  border-right: 1px solid yellow;
+  border-right: 1px solid #a84232;
   outline: none;
   display: inline-block;
 }
@@ -39,7 +39,7 @@ textarea:click {
 
 #mdel {
   padding-bottom: 10px;
-  border-bottom: 3px solid yellow; 
+  border-bottom: 3px solid #a84232; 
 }
 
 #md-html {
@@ -71,8 +71,19 @@ p {
     width: 100%;
   }
   #md-html {
-    border-top: 1px solid yellow;
+    border-top: 1px solid #a84232;
     display: block;
     width: 100%;
   }
+}
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  border-top: 1px solid #a84232;
+  height: 30px;
+  position: fixed;
+  z-index: 9;
+  background-color: var(--background);
 }

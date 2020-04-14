@@ -19,9 +19,12 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/style.css" />
-    <link href="themes/prism.css" rel="stylesheet" />
+    <link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" />
   </head>
   <body>
+    <script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"></script>
+	  <script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+    
     <div id="mdel">
       <button id="h1" onclick="insert('h1')">
         H1
@@ -79,8 +82,9 @@
     <textarea id="md-editor"></textarea>
 
     <div id="md-html"></div>
+    
+    <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="prism.js"></script>
   </body>
 </html>
