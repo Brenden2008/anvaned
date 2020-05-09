@@ -93,6 +93,7 @@
         <a href="https://twitter.com/khalby786" target="_blank">Twitter</a>
         <a href="/help" target="_blank">Help</a>
       </span>
+      <span id = "words" class="footer-text"></span>
       <span id = "chars" class="footer-text"></span>
     </footer>
 
@@ -102,7 +103,8 @@
     <script>
       window.onkeyup = () => {
         $('#chars').text($('#md-html').text().length + " chars");
-        var words = docu.value.match(/\b[-?(\w+)?]+\b/gi);
+        var words = document.getElementById("md-html").innerText.match(/\b[-?(\w+)?]+\b/gi);
+        document.getElementById("words").innerText = words.length + " words";
         var pres = document.querySelectorAll("pre>code");
         for (var i = 0; i < pres.length; i++) {
           hljs.highlightBlock(pres[i]);
