@@ -59,6 +59,7 @@ textarea:click {
   padding-left: 10px;
   padding-right: 10px;
   font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  margin-top: 0px;
 }
 
 p {
@@ -100,6 +101,7 @@ footer {
 pre > code {
   border-radius: 9px;
   background-color: #011627;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .footer-text {
