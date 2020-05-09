@@ -209,3 +209,8 @@ blockquote {
   padding-left: 20px;
   font-family: "Raleway", "Times New Roman", sans-serif;
 }
+
+#chars {
+ margin-right: 30px;
+  font-weight: bold;
+}

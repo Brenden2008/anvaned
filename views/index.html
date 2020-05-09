@@ -24,10 +24,6 @@
     />
     <!-- $('#mydiv').text().length -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script>
-      window.onmuse
-      $('#chars').text().length
-    </script>
   </head>
   <body>
     <div id="mdel">
@@ -92,14 +88,12 @@
       <span class="markme">
         MARKME!
       </span>
-      <center>
-        <span id="chars"></span>
-      </center>
       <span class="footer-text">
         <a href="https://github.com/khalby786/MarkMe!" target="_blank">GitHub</a>
         <a href="https://twitter.com/khalby786" target="_blank">Twitter</a>
         <a href="/help" target="_blank">Help</a>
       </span>
+      <span id = "chars" class="footer-text"></span>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -107,6 +101,8 @@
     <script src="/script.js" defer></script>
     <script>
       window.onkeyup = () => {
+        $('#chars').text($('#md-html').text().length + " chars");
+        var words = docu.value.match(/\b[-?(\w+)?]+\b/gi);
         var pres = document.querySelectorAll("pre>code");
         for (var i = 0; i < pres.length; i++) {
           hljs.highlightBlock(pres[i]);
