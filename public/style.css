@@ -25,13 +25,17 @@ textarea {
   border: none;
   width: 50%;
   resize: none;
-  min-height: 700px;
-  overflow-y: auto;
+  min-height: 500px;
+  overflow-y: hidden;
   font-size: 24px;
   font-family: 'IBM Plex Mono', monospace;
   border-right: 1px solid var(--border);
   outline: none;
   display: inline-block;
+}
+
+textarea::-webkit-scrollbar {
+  
 }
 
 textarea:click {
@@ -48,18 +52,18 @@ textarea:click {
   border: none;
   width: 47%;
   resize: none;
-  min-height: 700px;
-  overflow-y: hidden;
+  min-height: 500px;
+  overflow-y: auto;
   font-size: 24px;
   outline: none;
   display: inline-block;
   height: 50px;
   flex-direction: column;
-  overflow: auto;
   padding-left: 10px;
   padding-right: 10px;
   font-family: "Inter", "Helvetica", "Arial", sans-serif;
   margin-top: 0px;
+  vertical-align: top;
 }
 
 p {

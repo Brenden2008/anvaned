@@ -1,6 +1,10 @@
 // declaring the editor for everyone
 var editor = document.getElementById("md-editor");
 
+$('#md-html').on('scroll', function () {
+    $('#md-editor').scrollTop($(this).scrollTop());
+});
+
 MathJax.Hub.Config({
 	skipStartupTypeset: true,
 	showProcessingMessages: false,
