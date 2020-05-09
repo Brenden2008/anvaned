@@ -57,6 +57,7 @@ textarea:click {
   flex-direction: column;
   overflow: auto;
   padding-left: 10px;
+  padding-right: 10px;
   font-family: "Inter", "Helvetica", "Arial", sans-serif;
 }
 
