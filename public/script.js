@@ -1,7 +1,7 @@
 // declaring the editor for everyone
 var editor = document.getElementById("md-editor");
 
-MathJax.Hub.Config({
+/* MathJax.Hub.Config({
 	skipStartupTypeset: true,
 	showProcessingMessages: false,
 	tex2jax: {
@@ -14,7 +14,7 @@ MathJax.Hub.Config({
 			autoNumber: 'AMS'
 		}
 	}
-})
+}) */
 
 // keyup function to trigger MD to HTML conversion
 editor.onkeyup = function() {
