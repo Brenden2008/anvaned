@@ -26,7 +26,7 @@ textarea {
   width: 50%;
   resize: none;
   min-height: 500px;
-  overflow-y: hidden;
+  overflow-y: auto;
   font-size: 24px;
   font-family: 'IBM Plex Mono', monospace;
   border-right: 1px solid var(--border);
@@ -35,8 +35,10 @@ textarea {
 }
 
 textarea::-webkit-scrollbar {
-  
+  display: none;
 }
+
+
 
 textarea:click {
   outline: none;

@@ -5,6 +5,11 @@ $('#md-html').on('scroll', function () {
     $('#md-editor').scrollTop($(this).scrollTop());
 });
 
+$('#md-editor').on('scroll', function () {
+    $('#md-html').scrollTop($(this).scrollTop());
+});
+
+
 MathJax.Hub.Config({
 	skipStartupTypeset: true,
 	showProcessingMessages: false,
