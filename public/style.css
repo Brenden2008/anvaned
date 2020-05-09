@@ -87,8 +87,17 @@ footer {
   position: fixed;
   z-index: 9;
   background-color: var(--background);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
-#markme {
-  font-family: 
+.markme {
+  font-family: "IBM Plex Mono", monospace;
 }
+
+pre > code {
+  border-radius: 9px;
+  background-color: #011627;
+}
+

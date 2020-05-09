@@ -1,4 +1,4 @@
-// declaring the editor for everyone 
+// declaring the editor for everyone
 var editor = document.getElementById("md-editor");
 
 // keyup function to trigger MD to HTML conversion
@@ -83,7 +83,7 @@ function insert(md) {
       charAfter = "]()";
       break;
     default:
-      console.error("Unknown markdown character!")
+      console.error("Unknown markdown character!");
   }
 
   let start = editor.selectionStart; // editor start
