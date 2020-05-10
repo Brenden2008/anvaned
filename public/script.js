@@ -1,29 +1,28 @@
 // declaring the editor for everyone
 var editor = document.getElementById("md-editor");
 
-$('#md-html').on('scroll', function () {
-    $('#md-editor').scrollTop($(this).scrollTop());
+$("#md-html").on("scroll", function() {
+  $("#md-editor").scrollTop($(this).scrollTop());
 });
 
-$('#md-editor').on('scroll', function () {
-    $('#md-html').scrollTop($(this).scrollTop());
+$("#md-editor").on("scroll", function() {
+  $("#md-html").scrollTop($(this).scrollTop());
 });
-
 
 MathJax.Hub.Config({
-	skipStartupTypeset: true,
-	showProcessingMessages: false,
-	tex2jax: {
-		inlineMath: [['$', '$'], ['\\(', '\\)']],
-		displayMath: [['$$', '$$'], ['\\[', '\\]']],
-		processEscapes: true
-	},
-	TeX: {
-		equationNumbers: {
-			autoNumber: 'AMS'
-		}
-	}
-})
+  skipStartupTypeset: true,
+  showProcessingMessages: false,
+  tex2jax: {
+    inlineMath: [["$", "$"], ["\\(", "\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true
+  },
+  TeX: {
+    equationNumbers: {
+      autoNumber: "AMS"
+    }
+  }
+});
 
 // keyup function to trigger MD to HTML conversion
 editor.onkeyup = function() {
@@ -122,3 +121,18 @@ function insert(md) {
   editor.selectionEnd = end + charBehind.length;
   editor.focus(); // focus so as to not let the user lose concentration and return the input focus to editor
 }
+
+function dark() {
+  document.body.style.backgroundColor = "var(--background-dark)";
+  document.body.style.color = "var(--forground-dark)";
+  var x = document.getElementsByTagName("button");
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "var(--background-dark)";
+  }
+  document.getElementById("md-editor").style.backgroundColor = "var(--background-dark)";
+  document.getElementById("md-html").style.backgroundColor = "var(--background-dark)";
+  document.querySelector("footer").style.backgroundColor = "var(--background-dark)";
+  document.querySelector("footer").style.color = "var(--foreground-)"
+}
+
+dark();

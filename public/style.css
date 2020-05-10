@@ -8,7 +8,7 @@ body {
   --foreground-dark: white;
   --test: black;
   --border: #ff6b6b;
-  
+  --border-dark: #00F5D4;
   background-color: var(--background);
 }
 
@@ -32,7 +32,7 @@ textarea {
   overflow-y: auto;
   font-size: 24px;
   font-family: 'IBM Plex Mono', monospace;
-  border-right: 1px solid var(--border);
+  border-right: 1px dashed var(--border);
   outline: none;
   display: inline-block;
 }
@@ -93,7 +93,7 @@ footer {
   width: 100%;
   bottom: 0px;
   left: 0px;
-  border-top: 1px solid var(--border);
+/*   border-top: 1px solid var(--border); */
   height: 30px;
   position: fixed;
   z-index: 9;
