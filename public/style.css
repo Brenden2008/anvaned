@@ -3,9 +3,12 @@
 
 body {
   --background: #BFEDEF;
+  --background-dark: #100e17;
   --foreground: black;
+  --foreground-dark: white;
   --test: black;
   --border: #ff6b6b;
+  
   background-color: var(--background);
 }
 
@@ -13,10 +16,10 @@ button {
   background-color: var(--background);
   border: none;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 30px;
+  font-size: 25px;
   color: var(--border);
-  margin-left: 15px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -139,7 +142,7 @@ p {
   color: #444;
 }
 
-ul,
+utestl,
 li {
   font-size: 20px;
 }
