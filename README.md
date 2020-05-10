@@ -39,7 +39,7 @@ A lightweight and simple markdown to HTML viewer and editor online.
 
 1. Enter Markdown text on the left side.
 2. You'll get the HTML result on the right side!
-3. Enjoy!
+3. You can download the Markdown text or the HTML code, both as `.txt` files!
 
 *Kinda sounds stupid...*
 
