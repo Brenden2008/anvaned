@@ -160,5 +160,21 @@ function light() {
   }
 }
 
+if (document.body.style.backgroundColor === "#BFEDEF") {
+  document.getElementById("toggle").innerText = "DARK"; 
+} else {
+  document.getElementById("toggle").innerText = "LIGHT";
+}
+
+function toggle() {
+  console.log("TOGGGLLLLEEE!!!")
+  if (document.body.style.backgroundColor === "var(--background)") {
+    dark();
+    console.log("DARK!!!!")
+  } else {
+    light();
+    console.log("LIGHT!!!!")
+  }
+}
 // dark();
-// // light();
+// // light(); = 

@@ -247,3 +247,7 @@ blockquote {
   margin-right: 30px;
   font-weight: bold;
 }
+
+#toggle {
+  float: right;
+}
