@@ -14,7 +14,7 @@ body {
 }
 
 * {
-  transition: 1s linear !important;
+  transition: 150ms linear !important;
 }
 
 body::-webkit-scrollbar {

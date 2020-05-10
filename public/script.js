@@ -1,6 +1,27 @@
 // declaring the editor for everyone
 var editor = document.getElementById("md-editor");
 
+if (!localStorage.markdown) {
+  // send localstorage value
+  document.getElementById("md-editor").value = "";
+} else {
+  // send localstorage value
+  document.getElementById("md-editor").value = localStorage.markdown;
+}
+
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
 $("#md-html").on("scroll", function() {
   $("#md-editor").scrollTop($(this).scrollTop());
 });
@@ -29,6 +50,7 @@ editor.onkeyup = function() {
   let md = this.value;
   console.log(md);
   document.getElementById("md-html").innerHTML = marked(md);
+  localStorage.setItem("markdown", md);
 };
 
 // function insertAtCursor(value) {
