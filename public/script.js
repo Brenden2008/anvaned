@@ -153,6 +153,8 @@ function dark() {
   }
   document.getElementById("md-editor").style.backgroundColor =
     "var(--background-dark)";
+   document.getElementById("down-pop").style.backgroundColor =
+    "var(--background-dark)";
   document.getElementById("md-editor").style.color = "var(--foreground-dark)";
   document.getElementById("md-html").style.backgroundColor =
     "var(--background-dark)";
@@ -174,6 +176,8 @@ function light() {
     x[i].style.backgroundColor = "var(--background)";
   }
   document.getElementById("md-editor").style.backgroundColor =
+    "var(--background)";
+  document.getElementById("down-pop").style.backgroundColor =
     "var(--background)";
   document.getElementById("md-editor").style.color = "var(--foreground)";
   document.getElementById("md-html").style.backgroundColor =
