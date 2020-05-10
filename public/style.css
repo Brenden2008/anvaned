@@ -10,6 +10,11 @@ body {
   --border: #ff6b6b;
   --border-dark: #00F5D4;
   background-color: var(--background);
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 button {
@@ -41,13 +46,17 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 
-
+#md-html::-webkit-scrollbar {
+  display: none;
+}
 
 textarea:click {
   outline: none;
 }
 
 #mdel {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--border); 
 }
