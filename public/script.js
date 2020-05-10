@@ -201,3 +201,11 @@ function toggle() {
 }
 // dark();
 // // light(); =
+
+function show() {
+  if (document.getElementById("down-pop").style.display === "none") {
+    document.getElementById("down-pop").style.display = "block"
+  } else {
+    document.getElementById("down-pop").style.display = "none";
+  }
+}

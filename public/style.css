@@ -255,3 +255,17 @@ blockquote {
 #toggle {
   float: right;
 }
+
+#download {
+  float: right;
+}
+
+#down-pop {
+  float: right;
+  position: relative;
+  top: 7px;
+  background-color: var(--background);
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  display: none;
+}

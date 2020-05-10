@@ -75,12 +75,20 @@
       <button id="a" onclick="insert('a')">
         A
       </button>
-      <button id="download" onclick="download('markdown.txt', editor.value);">
+      <button id="download" onclick="show();">
         DOWNLOAD
       </button>
       <button id="toggle" onclick="toggle();">
         DARK
       </button>
+      <div id="down-pop">
+        <button onclick="download('markdown.txt', editor.value);">
+          MARKDOWN
+        </button>
+        <button onclick="download('html.txt', document.getElementById('md-html').innerHTML);">
+          HTML
+        </button>
+      </div>
     </div>
 
     <!-- Add line breaks forever -->
