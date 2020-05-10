@@ -28,6 +28,10 @@ button {
   cursor: pointer;
 }
 
+button > b, i {
+  color: var(--border) !important;
+}
+
 textarea {
   background-color: var(--background);
   border: none;
@@ -75,9 +79,13 @@ textarea:click {
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif !important;
   margin-top: 0px;
   vertical-align: top;
+}
+
+#md-html > h1 {
+  font-family: "Inter", "Helvetica", "Arial", sans-serif !important;
 }
 
 p {

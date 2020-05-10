@@ -141,4 +141,24 @@ function dark() {
   }
 }
 
-dark();
+function light() {
+  document.body.style.backgroundColor = "var(--background)";
+  document.body.style.color = "var(--forground)";
+  var x = document.getElementsByTagName("button");
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "var(--background)";
+  }
+  document.getElementById("md-editor").style.backgroundColor = "var(--background)";
+  document.getElementById("md-editor").style.color = "var(--foreground)";
+  document.getElementById("md-html").style.backgroundColor = "var(--background)";
+  document.getElementById("md-html").style.color = "var(--foreground)";
+  document.querySelector("footer").style.backgroundColor = "var(--background)";
+  document.querySelector("footer").style.color = "var(--foreground)";
+  var x = document.getElementsByTagName("a");
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.color = "var(--foreground)";
+  }
+}
+
+// dark();
+// // light();
