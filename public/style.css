@@ -67,6 +67,13 @@ textarea:click {
   position: sticky;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--border); 
+  resize: vertical;
+  overflow: auto;
+  min-height: 30px;
+}
+
+#mdel::-webkit-resizer {
+  display: none;
 }
 
 #md-html {
