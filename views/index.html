@@ -120,16 +120,17 @@
         <button id="toggle" @click="darktheme === true ? light() : dark()">
           🌙
         </button>
-        <div id="down-pop">
-          <button @click="download('markdown.txt', editor.value);">
-            MARKDOWN
-          </button>
-          <button
-            @click="download('html.txt', document.getElementById('md-html').innerHTML);"
-          >
-            HTML
-          </button>
-        </div>
+      </div>
+
+      <div id="down-pop">
+        <button @click="download('markdown.txt', editor.value);">
+          MARKDOWN
+        </button>
+        <button
+          @click="download('html.txt', document.getElementById('md-html').innerHTML);"
+        >
+          HTML
+        </button>
       </div>
 
       <!-- Add line breaks forever -->
@@ -143,10 +144,18 @@
         <span class="markme">
           MARKME!
         </span>
-        <span class="center" style="background-color:var(--border)" @click="hidemdtext === 'Hide' ? hidemd() : showmd()">
-          {{hidemdtext}} Markdown 
+        <span
+          class="center"
+          style="background-color:var(--border)"
+          @click="hidemdtext === 'Hide' ? hidemd() : showmd()"
+        >
+          {{hidemdtext}} Markdown
         </span>
-        <span class="center" style="background-color:var(--border)" @click="hidehtmltext === 'Hide' ? hidehtml() : showhtml()">
+        <span
+          class="center"
+          style="background-color:var(--border)"
+          @click="hidehtmltext === 'Hide' ? hidehtml() : showhtml()"
+        >
           {{hidehtmltext}} HTML
         </span>
         <span class="footer-text">
@@ -161,7 +170,7 @@
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<!--     <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <!--     <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
@@ -200,8 +209,8 @@
         var words = document
           .getElementById("md-html")
           .innerText.match(/\b[-?(\w+)?]+\b/gi);
-        if (words = "") {
-          document.getElementById("words").innerText = 0 + " words";  
+        if ((words = "")) {
+          document.getElementById("words").innerText = 0 + " words";
         } else {
           document.getElementById("words").innerText = words.length + " words";
         }
