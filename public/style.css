@@ -129,6 +129,7 @@ footer {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .markme {
@@ -274,4 +275,10 @@ blockquote {
   border-radius: 3px;
   border: 1px solid var(--border);
   display: none;
+}
+
+.center {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  display: inline-block;
 }
