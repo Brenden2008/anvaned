@@ -39,7 +39,10 @@
       property="og:description"
       content="A simple, yet another markdown to HTML converter."
     />
-    <meta property="og:image" content="https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2Fmarkme%20(1).png?v=1589130880448" />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2Fmarkme%20(1).png?v=1589130880448"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -49,103 +52,110 @@
       property="twitter:description"
       content="A simple, yet another markdown to HTML converter."
     />
-    <meta property="twitter:image" content="https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2Fmarkme%20(1).png?v=1589130880448" />
+    <meta
+      property="twitter:image"
+      content="https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2Fmarkme%20(1).png?v=1589130880448"
+    />
 
     <!-- $('#mydiv').text().length -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    
+
     <script src="/pwa.js"></script>
-    <link rel="manifest" href="/manifest.json">
-    
+    <link rel="manifest" href="/manifest.json" />
   </head>
   <body>
-    <div id="mdel">
-      <button id="h1" onclick="insert('h1')">
-        H1
-      </button>
-      <button id="h2" onclick="insert('h2')">
-        H2
-      </button>
-      <button id="h3" onclick="insert('h3')">
-        H3
-      </button>
-      <button id="h4" onclick="insert('h4')">
-        H4
-      </button>
-      <button id="h5" onclick="insert('h5')">
-        H5
-      </button>
-      <button id="h6" onclick="insert('h6')">
-        H6
-      </button>
-      <button id="italic" onclick="insert('italic')">
-        <i>I</i>
-      </button>
-      <button id="bold" onclick="insert('bold')">
-        <b>B</b>
-      </button>
-      <button id="strike" onclick="insert('strike')">
-        <strike>S</strike>
-      </button>
-      <button id="ul" onclick="insert('ul')">
-        ●
-      </button>
-      <button id="ol" onclick="insert('ol')">
-        1.
-      </button>
-      <button id="quote" onclick="insert('quote')">
-        &gt;
-      </button>
-      <button id="inline" onclick="insert('inline')">
-        I&lt;&gt;
-      </button>
-      <button id="block" onclick="insert('block')">
-        &lt;&gt;B
-      </button>
-      <button id="hr" onclick="insert('hr')">
-        ---
-      </button>
-      <button id="a" onclick="insert('a')">
-        A
-      </button>
-      <button id="download" onclick="show();">
-        💾
-      </button>
-      <button id="toggle" onclick="toggle();">
-        🌙
-      </button>
-      <div id="down-pop">
-        <button onclick="download('markdown.txt', editor.value);">
-          MARKDOWN
+    <div id="app">
+      <div id="mdel">
+        <button id="h1" @click="insert('h1')">
+          H1
         </button>
-        <button
-          onclick="download('html.txt', document.getElementById('md-html').innerHTML);"
-        >
-          HTML
+        <button id="h2" @click="insert('h2')">
+          H2
         </button>
+        <button id="h3" @click="insert('h3')">
+          H3
+        </button>
+        <button id="h4" @click="insert('h4')">
+          H4
+        </button>
+        <button id="h5" @click="insert('h5')">
+          H5
+        </button>
+        <button id="h6" @click="insert('h6')">
+          H6
+        </button>
+        <button id="italic" @click="insert('italic')">
+          <i>I</i>
+        </button>
+        <button id="bold" @click="insert('bold')">
+          <b>B</b>
+        </button>
+        <button id="strike" @click="insert('strike')">
+          <strike>S</strike>
+        </button>
+        <button id="ul" @click="insert('ul')">
+          ●
+        </button>
+        <button id="ol" @click="insert('ol')">
+          1.
+        </button>
+        <button id="quote" @click="insert('quote')">
+          &gt;
+        </button>
+        <button id="inline" @click="insert('inline')">
+          I&lt;&gt;
+        </button>
+        <button id="block" @click="insert('block')">
+          &lt;&gt;B
+        </button>
+        <button id="hr" @click="insert('hr')">
+          ---
+        </button>
+        <button id="a" @click="insert('a')">
+          A
+        </button>
+        <button id="download" @click="visible === false ? show() : hide()">
+          💾
+        </button>
+        <button id="toggle" @click="darktheme === true ? light() : dark()">
+          🌙
+        </button>
+        <div id="down-pop">
+          <button @click="download('markdown.txt', editor.value);">
+            MARKDOWN
+          </button>
+          <button
+            @click="download('html.txt', document.getElementById('md-html').innerHTML);"
+          >
+            HTML
+          </button>
+        </div>
       </div>
+
+      <!-- Add line breaks forever -->
+      <br /><br />
+
+      <textarea id="md-editor" v-model="md" v-on:keyup="convert"></textarea>
+
+      <div id="md-html" v-html="html"></div>
+
+      <footer>
+        <span class="markme">
+          MARKME!
+        </span>
+        <span class="footer-text">
+          <a href="https://github.com/khalby786/MarkMe" target="_blank"
+            >GitHub</a
+          >
+          <a href="https://twitter.com/khalby786" target="_blank">Twitter</a>
+          <a href="/help" target="_blank">Help</a>
+        </span>
+        <span id="words" class="footer-text"></span>
+        <span id="chars" class="footer-text"></span>
+      </footer>
     </div>
 
-    <!-- Add line breaks forever -->
-    <br /><br />
-
-    <textarea id="md-editor"></textarea>
-
-    <div id="md-html"></div>
-
-    <footer>
-      <span class="markme">
-        MARKME!
-      </span>
-      <span class="footer-text">
-        <a href="https://github.com/khalby786/MarkMe" target="_blank">GitHub</a>
-        <a href="https://twitter.com/khalby786" target="_blank">Twitter</a>
-        <a href="/help" target="_blank">Help</a>
-      </span>
-      <span id="words" class="footer-text"></span>
-      <span id="chars" class="footer-text"></span>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
@@ -184,7 +194,11 @@
         var words = document
           .getElementById("md-html")
           .innerText.match(/\b[-?(\w+)?]+\b/gi);
-        document.getElementById("words").innerText = words.length + " words";
+        if (words = "") {
+          document.getElementById("words").innerText = 0 + " words";  
+        } else {
+          document.getElementById("words").innerText = words.length + " words";
+        }
         var pres = document.querySelectorAll("pre>code");
         for (var i = 0; i < pres.length; i++) {
           hljs.highlightBlock(pres[i]);
