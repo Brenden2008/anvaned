@@ -166,6 +166,10 @@ function dark() {
   for (let i = 0; i < x.length; i++) {
     x[i].style.color = "var(--foreground-dark)";
   }
+  var p = document.querySelectorAll('p');
+  for (let i = 0; i < p.length; i++) {
+    p[i].style.color = "white";
+  }
 }
 
 function light() {
@@ -188,6 +192,10 @@ function light() {
   var x = document.getElementsByTagName("a");
   for (let i = 0; i < x.length; i++) {
     x[i].style.color = "var(--foreground)";
+  }
+  var p = document.querySelectorAll('p');
+  for (let i = 0; i < p.length; i++) {
+    p[i].style.color = "var(--foreground)";
   }
 }
 

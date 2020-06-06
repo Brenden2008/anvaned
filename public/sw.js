@@ -1,4 +1,4 @@
-const staticCacheName = 's2sl-pwa';
+const staticCacheName = 'markme';
 const assets = [
   '/',
   '/style.css',
