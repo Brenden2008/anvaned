@@ -5,7 +5,9 @@ var app = new Vue({
       md: localStorage.getItem("markdown") || "",
       html: marked(localStorage.getItem("markdown")) || "",
       darktheme: "false",
-      visible: false
+      visible: false,
+      hidehtmltext: "Hide",
+      hidemdtext: "Hide"
     };
   },
   methods: {

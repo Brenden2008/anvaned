@@ -145,7 +145,7 @@ pre > code {
 .footer-text {
   font-family: "IBM Plex Mono", monospace;
   float: right;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 a {
