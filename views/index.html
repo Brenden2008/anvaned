@@ -143,10 +143,10 @@
         <span class="markme">
           MARKME!
         </span>
-        <span class="center" style="background-color:var(--border)">
+        <span class="center" style="background-color:var(--border)" @click="hidemdtext === 'Hide' ? hidemd() : showmd()">
           {{hidemdtext}} Markdown 
         </span>
-        <span style="background-color:var(--border)">
+        <span class="center" style="background-color:var(--border)" @click="hidehtmltext === 'Hide' ? hidehtml() : showhtml()">
           {{hidehtmltext}} HTML
         </span>
         <span class="footer-text">
@@ -160,8 +160,8 @@
         <span id="chars" class="footer-text"></span>
       </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>

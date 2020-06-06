@@ -182,6 +182,22 @@ var app = new Vue({
       element.click();
 
       document.body.removeChild(element);
+    },
+    hidehtml() {
+      this.hidehtmltext = "Show";
+      document.getElementById("md-html").style.display = "none";
+    },
+    showhtml() {
+      this.hidehtmltext = "Hide";
+      document.getElementById("md-html").style.display = "block";
+    },
+    hidemd() {
+      this.hidemdtext = "Show";
+      document.getElementById("md-editor").style.display = "none";
+    },
+    showmd() {
+      this.hidemdtext = "Hide";
+      document.getElementById("md-editor").style.display = "block";
     }
   }
 });
