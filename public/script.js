@@ -186,10 +186,11 @@ var app = new Vue({
     hidehtml() {
       this.hidehtmltext = "Show";
       document.getElementById("md-html").style.display = "none";
+      
     },
     showhtml() {
       this.hidehtmltext = "Hide";
-      document.getElementById("md-html").style.display = "block";
+      document.getElementById("md-html").style.display = "inline-block";      
     },
     hidemd() {
       this.hidemdtext = "Show";
@@ -197,7 +198,7 @@ var app = new Vue({
     },
     showmd() {
       this.hidemdtext = "Hide";
-      document.getElementById("md-editor").style.display = "block";
+      document.getElementById("md-editor").style.display = "inline-block";
     }
   }
 });

@@ -93,6 +93,7 @@ textarea:click {
   font-family: "Inter", "Helvetica", "Arial", sans-serif !important;
   margin-top: 0px;
   vertical-align: top;
+  transition: 200ms ease !important;
 }
 
 #md-html > h1 {
