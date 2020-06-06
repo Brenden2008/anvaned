@@ -204,11 +204,11 @@ function toggle() {
   if (document.body.style.backgroundColor === "var(--background)") {
     dark();
     console.log("DARK!!!!");
-    document.getElementById("toggle").innerText = "LIGHT";
+    document.getElementById("toggle").innerText = "🌞";
   } else {
     light();
     console.log("LIGHT!!!!");
-    document.getElementById("toggle").innerText = "DARK";
+    document.getElementById("toggle").innerText = "🌙";
   }
 }
 // dark();
