@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+@import url("https://rsms.me/inter/inter.css");
 
 body {
   --background: #BFEDEF;
@@ -11,7 +10,7 @@ body {
   --border: #ff6b6b;
   --border-dark: #00F5D4;
   background-color: var(--background);
-  overflow: auto; 
+  overflow: auto;
 }
 
 * {
@@ -33,7 +32,8 @@ button {
   cursor: pointer;
 }
 
-button > b, i {
+button > b,
+i {
   color: var(--border) !important;
 }
 
@@ -45,11 +45,10 @@ textarea {
   min-height: 500px;
   overflow-y: auto;
   font-size: 24px;
-  font-family: 'Fira Mono', 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   border-right: 1px dashed var(--border);
   outline: none;
   display: inline-block;
-  transition: 200ms ease !important;
 }
 
 textarea::-webkit-scrollbar {
@@ -68,14 +67,7 @@ textarea:click {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--border); 
-  resize: vertical;
-  overflow: auto;
-  min-height: 30px;
-}
-
-#mdel::-webkit-resizer {
-  display: none;
+  border-bottom: 3px solid var(--border);
 }
 
 #md-html {
@@ -95,7 +87,6 @@ textarea:click {
   font-family: "Inter", "Helvetica", "Arial", sans-serif !important;
   margin-top: 0px;
   vertical-align: top;
-  transition: 200ms ease !important;
 }
 
 #md-html > h1 {
@@ -105,7 +96,6 @@ textarea:click {
 p {
   margin-block-start: 0px;
 }
-
 
 @media only screen and (max-width: 982px) {
   textarea {
@@ -124,7 +114,7 @@ footer {
   width: 100%;
   bottom: 0px;
   left: 0px;
-/*   border-top: 1px solid var(--border); */
+  /*   border-top: 1px solid var(--border); */
   height: 30px;
   position: fixed;
   z-index: 9;
@@ -132,7 +122,6 @@ footer {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
-  padding-right: 10px;
 }
 
 .markme {
@@ -142,13 +131,13 @@ footer {
 pre > code {
   border-radius: 9px;
   background-color: #011627;
-  font-family: "Fira Mono", "IBM Plex Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .footer-text {
   font-family: "IBM Plex Mono", monospace;
   float: right;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 a {
@@ -195,11 +184,10 @@ table {
   border-spacing: 0;
   empty-cells: show;
   border: 1px solid #cbcbcb;
-  color: var(--foreground);
 }
 
 table caption {
-  color: var(--foreground);
+  color: #000;
   font: italic 85%/1 arial, sans-serif;
   padding: 1em 0;
   text-align: center;
@@ -217,7 +205,7 @@ table th {
 
 table thead {
   background-color: #e0e0e0;
-  color: var(--foreground);
+  color: #000;
   text-align: left;
   vertical-align: bottom;
 }
@@ -254,7 +242,7 @@ blockquote {
 }
 
 #chars {
- margin-right: 30px;
+  margin-right: 30px;
   font-weight: bold;
 }
 
@@ -273,14 +261,138 @@ blockquote {
 
 #down-pop {
   float: right;
-  position: absolute;
-  top: 40px;
-  right: 20px;
-  z-index: 2;
+  position: relative;
+  top: 7px;
   background-color: var(--background);
   border-radius: 3px;
   border: 1px solid var(--border);
   display: none;
+}
+
+kbd {
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #d0d0d0;
+  border-bottom-width: 1px;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #222;
+  display: inline-flex;
+  font-size: 0.8706em;
+  justify-content: center;
+  line-height: 1.4;
+  margin: 0 0.15em;
+  min-width: 24px;
+  padding: 0.15em 0.6em;
+  font-family: "Fira Mono", "IBM Plex Mono", monospace;
+}
+
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+}
+ 
+.tooltip .tooltip-inner {
+  background: black;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px 4px;
+  font-family: "Inter", "Helvetica", sans-serif;
+}
+ 
+.tooltip .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+  border-color: black;
+  z-index: 1;
+}
+ 
+.tooltip[x-placement^="top"] {
+  margin-bottom: 5px;
+}
+ 
+.tooltip[x-placement^="top"] .tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ 
+.tooltip[x-placement^="bottom"] {
+  margin-top: 5px;
+}
+ 
+.tooltip[x-placement^="bottom"] .tooltip-arrow {
+  border-width: 0 5px 5px 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ 
+.tooltip[x-placement^="right"] {
+  margin-left: 5px;
+}
+ 
+.tooltip[x-placement^="right"] .tooltip-arrow {
+  border-width: 5px 5px 5px 0;
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+ 
+.tooltip[x-placement^="left"] {
+  margin-right: 5px;
+}
+ 
+.tooltip[x-placement^="left"] .tooltip-arrow {
+  border-width: 5px 0 5px 5px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+ 
+.tooltip.popover .popover-inner {
+  background: #f9f9f9;
+  color: black;
+  padding: 24px;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px rgba(black, .1);
+}
+ 
+.tooltip.popover .popover-arrow {
+  border-color: #f9f9f9;
+}
+ 
+.tooltip[aria-hidden='true'] {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .15s, visibility .15s;
+}
+ 
+.tooltip[aria-hidden='false'] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .15s;
 }
 
 .center {
