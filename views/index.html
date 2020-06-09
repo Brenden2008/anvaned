@@ -66,46 +66,103 @@
   <body>
     <div id="app">
       <div id="mdel">
-        <markdown_el element="H1" insertel="h1" tooltip="Heading 1"></markdown_el>
-        <markdown_el element="H2" insertel="h2" tooltip="Heading 2"></markdown_el>
-        <markdown_el element="H3" insertel="h3" tooltip="Heading 3"></markdown_el>
-        <markdown_el element="H4" insertel="h4" tooltip="Heading 4"></markdown_el>
-        <markdown_el element="H5" insertel="h5" tooltip="Heading 5"></markdown_el>
-        <markdown_el element="H6" insertel="h6" tooltip="Heading 6"></markdown_el>
-        <markdown_el element="<i>I</i>" insertel="italic" tooltip="Italic text"></markdown_el>
-        <markdown_el element="<b>B</b>" insertel="bold" tooltip="Bold text"></markdown_el>
-        <markdown_el element="<strike>S</strike>" insertel="strike" tooltip="Strikethrough text"></markdown_el>
-        <markdown_el element="●" insertel="ul" tooltip="Unordered list"></markdown_el>
-        <markdown_el element="1" insertel="ol" tooltip="Ordered list"></markdown_el>
-        <markdown_el element="&gt" insertel="quote" tooltip="Blockquote"></markdown_el>
-        <markdown_el element="I&lt&gt" insertel="inline" tooltip="Inline code"></markdown_el>
-        <markdown_el element="&lt&gtB" insertel="block" tooltip="Block code"></markdown_el>
-        <markdown_el element="---" insertel="hr" tooltip="Horizontal rule"></markdown_el>
-        <markdown_el element="A" insertel="a" tooltip="Insert link"></markdown_el>
-        <download></download>
-        <theme></theme>
-        <div id="down-pop">
-          <button @click="download('markdown.txt', editor.value);">
-            MARKDOWN
-          </button>
-          <button
-            @click="download('html.txt', document.getElementById('md-html').innerHTML);"
-          >
-            HTML
-          </button>
-        </div>
+        <button id="h1" @click="insert('h1')">
+          H1
+        </button>
+        <button id="h2" @click="insert('h2')">
+          H2
+        </button>
+        <button id="h3" @click="insert('h3')">
+          H3
+        </button>
+        <button id="h4" @click="insert('h4')">
+          H4
+        </button>
+        <button id="h5" @click="insert('h5')">
+          H5
+        </button>
+        <button id="h6" @click="insert('h6')">
+          H6
+        </button>
+        <button id="italic" @click="insert('italic')">
+          <i>I</i>
+        </button>
+        <button id="bold" @click="insert('bold')">
+          <b>B</b>
+        </button>
+        <button id="strike" @click="insert('strike')">
+          <strike>S</strike>
+        </button>
+        <button id="ul" @click="insert('ul')">
+          ●
+        </button>
+        <button id="ol" @click="insert('ol')">
+          1.
+        </button>
+        <button id="quote" @click="insert('quote')">
+          &gt;
+        </button>
+        <button id="inline" @click="insert('inline')">
+          I&lt;&gt;
+        </button>
+        <button id="block" @click="insert('block')">
+          &lt;&gt;B
+        </button>
+        <button id="hr" @click="insert('hr')">
+          ---
+        </button>
+        <button id="a" @click="insert('a')">
+          A
+        </button>
+        <button id="download" @click="visible === false ? show() : hide()">
+          💾
+        </button>
+        <button id="toggle" @click="darktheme === true ? light() : dark()">
+          🌙
+        </button>
+      </div>
+
+      <div id="down-pop">
+        <button @click="download('markdown.txt', editor.value);">
+          MARKDOWN
+        </button>
+        <button
+          @click="download('html.txt', document.getElementById('md-html').innerHTML);"
+        >
+          HTML
+        </button>
       </div>
 
       <!-- Add line breaks forever -->
       <br /><br />
 
-      <mdhtml></mdhtml>
+      <textarea id="md-editor" v-model="md" v-on:keyup="convert"></textarea>
+
+      <div id="md-html" v-html="html"></div>
 
       <footer>
         <span class="markme">
           MARKME!
         </span>
+        <span
+          class="center"
+          style="background-color:var(--border)"
+          @click="hidemdtext === 'Hide' ? hidemd() : showmd()"
+        >
+          {{hidemdtext}} Markdown
+        </span>
+        <span
+          class="center"
+          style="background-color:var(--border)"
+          @click="hidehtmltext === 'Hide' ? hidehtml() : showhtml()"
+        >
+          {{hidehtmltext}} HTML
+        </span>
         <span class="footer-text">
+          <span style="font-size:20px;">
+            🎨
+          </span>
+          &nbsp;
           <a href="https://github.com/khalby786/MarkMe" target="_blank"
             >GitHub</a
           >
@@ -116,10 +173,8 @@
         <span id="chars" class="footer-text"></span>
       </footer>
     </div>
-
-    <script src="https://unpkg.com/v-tooltip"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<!--     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--     <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
@@ -158,8 +213,8 @@
         var words = document
           .getElementById("md-html")
           .innerText.match(/\b[-?(\w+)?]+\b/gi);
-        if (words = "") {
-          document.getElementById("words").innerText = 0 + " words";  
+        if ((words = "")) {
+          document.getElementById("words").innerText = 0 + " words";
         } else {
           document.getElementById("words").innerText = words.length + " words";
         }
