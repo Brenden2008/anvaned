@@ -11,28 +11,28 @@ Vue.component("markdown_el", {
 
       switch (md) {
         case "h1":
-          charBehind = "#";
-          charAfter = " ";
+          charBehind = "# ";
+          charAfter = "";
           break;
         case "h2":
-          charBehind = "##";
-          charAfter = " ";
+          charBehind = "## ";
+          charAfter = "";
           break;
         case "h3":
-          charBehind = "###";
-          charAfter = " ";
+          charBehind = "### ";
+          charAfter = "";
           break;
         case "h4":
-          charBehind = "####";
-          charAfter = " ";
+          charBehind = "#### ";
+          charAfter = "";
           break;
         case "h5":
-          charBehind = "#####";
-          charAfter = " ";
+          charBehind = "##### ";
+          charAfter = "";
           break;
         case "h6":
-          charBehind = "######";
-          charAfter = " ";
+          charBehind = "###### ";
+          charAfter = "";
           break;
         case "bold":
           charBehind = "**";
