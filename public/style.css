@@ -21,6 +21,17 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#mdel::-webkit-scrollbar {
+  background-color: none;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+#mdel::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
 button {
   background-color: var(--background);
   border: none;
@@ -68,8 +79,11 @@ textarea:click {
   position: sticky;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--border);
-  overflow-x: hidden;
-  overflow-y: auto;
+  display: flex;
+  flex-grow: 1;
+  overflow-x: auto;
+  height: 50px;
+  overflow-y: hidden;
 }
 
 #md-html {
