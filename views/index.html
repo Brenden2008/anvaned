@@ -65,11 +65,6 @@
   </head>
   <body>
     <div id="app">
-      
-      <Modal>
-        Hi
-      </Modal>
-      
       <div id="mdel">
         <markdown_el element="H1" insertel="h1" tooltip="Heading 1"></markdown_el>
         <markdown_el element="H2" insertel="h2" tooltip="Heading 2"></markdown_el>
@@ -91,7 +86,7 @@
         <theme></theme>
       </div>
 
-      <div id="down-pop">
+<!--       <div id="down-pop">
           <button @click="download('markdown.txt', editor.value);">
             MARKDOWN
           </button>
@@ -100,7 +95,15 @@
           >
             HTML
           </button>
+        </div> -->
+      
+      <div id="modal-background">
+        <div id="down-pop">
+          <p>
+            Some text
+          </p>
         </div>
+      </div>
       
       <!-- Add line breaks forever -->
       <br /><br />
@@ -139,7 +142,6 @@
 
 <!--     <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script src="https://unpkg.com/v-tooltip"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue-js-modal@2.0.0-rc.6/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>

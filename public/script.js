@@ -1,5 +1,4 @@
 Vue.use(VTooltip);
-Vue.use(VModal);
 
 Vue.component("markdown_el", {
   template:
