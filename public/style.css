@@ -278,7 +278,7 @@ blockquote {
 }
 
 #modal-background {
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 99; /* Sit on top */
   left: 0;
@@ -297,10 +297,14 @@ blockquote {
   border-radius: 3px;
   border: 3px solid var(--border);
   margin: auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 80%;
   margin-top: 15%;
   margin-left: 8vw;
+  margin-right: 4vw;
   box-shadow:
     0 0px 2.2px rgba(0, 0, 0, 0.028),
     0 0px 5.3px rgba(0, 0, 0, 0.04),
@@ -310,6 +314,12 @@ blockquote {
     0 0px 80px rgba(0, 0, 0, 0.1)
   ;
   font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.right {
+  float: right;
+  width: 400px;
+  line-height: 1.5;
 }
 
 kbd {
