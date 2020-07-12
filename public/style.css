@@ -68,6 +68,8 @@ textarea:click {
   position: sticky;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--border);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #md-html {
