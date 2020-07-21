@@ -455,3 +455,8 @@ kbd {
   display: inline-block;
   cursor: pointer;
 }
+
+#github-logo {
+  height: 50px !important;
+  width: 50px !important;
+}
