@@ -168,16 +168,18 @@ Vue.component("download", {
   template: `<button id="download" @click="visible === false ? show() : hide()" v-tooltip="'Download HTML or Markdown'">💾</button>`,
   data() {
     return {
-      visible: false
+      visible: false,
+      editor: document.getElementById('editor').value,
+      html: document.getElementById('md-html').innerHTML
     };
   },
   methods: {
     show() {
-      document.getElementById("down-pop").style.display = "block";
+      document.getElementById("modal-background").style.display = "block";
       this.visible = true;
     },
     hide() {
-      document.getElementById("down-pop").style.display = "none";
+      document.getElementById("modal-background").style.display = "none";
       this.visible = false;
     }
   }

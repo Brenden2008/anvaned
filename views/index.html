@@ -106,9 +106,9 @@
             Markdown
           </p>
           <p class="right">
-            Download the rendered HTML as a <code>.html</code> file, <code>.txt</code> or a <code>.pdf</code> file.
+            Download the rendered HTML as a <code @click="download('html.html', html);">.html</code> file, <code @click="download('html.txt', html);">.txt</code> or a <code @click="download('html.pdf', html);">.pdf</code> file.
             <br><br>
-            Alternatively, you can download the Markdown content as a <code>.md</code>, <code>.txt</code> or a <code>.pdf</code> file.
+            Alternatively, you can download the Markdown content as a <code @click="download('markdown.md', editor);">.md</code>, <code @click="download('markdown.txt', editor);">.txt</code> or a <code @click="download('markdown.pdf', editor);">.pdf</code> file.
           </p>
         </div>
       </div>
