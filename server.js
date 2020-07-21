@@ -12,8 +12,16 @@ app.use(express.static("public"));
 
 // https://expressjs.com/en/starter/basic-routing.html
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+  if (process.env.WIP === 'true') {
+    response.send('Very sorry, but I\'m updating MarkMe! for improving user experience. Sorry for the inconvenience!')
+  } else {
+    response.sendFile(__dirname + "/views/index.html");
+  }
 });
+
+app.get("/dev", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
+})
 
 app.get("/help", (request, response) => {
   response.sendFile(__dirname + "/views/help.html");

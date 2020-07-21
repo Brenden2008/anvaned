@@ -164,27 +164,6 @@ Vue.component("theme", {
   }
 });
 
-Vue.component("download", {
-  template: `<button id="download" @click="visible === false ? show() : hide()" v-tooltip="'Download HTML or Markdown'">💾</button>`,
-  data() {
-    return {
-      visible: false,
-      editor: document.getElementById('editor').value,
-      html: document.getElementById('md-html').innerHTML
-    };
-  },
-  methods: {
-    show() {
-      document.getElementById("modal-background").style.display = "block";
-      this.visible = true;
-    },
-    hide() {
-      document.getElementById("modal-background").style.display = "none";
-      this.visible = false;
-    }
-  }
-});
-
 let localstorage = '';
 if (!localStorage.getItem("markdown")) {
   localstorage = '';
@@ -208,12 +187,33 @@ Vue.component("mdhtml", {
   }
 })
 
+Vue.component("download", {
+  template: `<button id="download" @click="visible === false ? show() : hide()" v-tooltip="'Download HTML or Markdown'">💾</button>`,
+  data() {
+    return {
+      visible: false,
+      // editor: document.getElementById('md-editor').value,
+      // html: document.getElementById('md-html').innerHTML
+    };
+  },
+  methods: {
+    show() {
+      document.getElementById("modal-background").style.display = "block";
+      this.visible = true;
+    },
+    hide() {
+      document.getElementById("modal-background").style.display = "none";
+      this.visible = false;
+    }
+  }
+});
+
 var app = new Vue({
   el: "#app",
   data() {
     return {
       hidehtmltext: "Hide",
-      hidemdtext: "Hide"
+      hidemdtext: "Hide",
     };
   },
   methods: {
