@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
 @import url("https://rsms.me/inter/inter.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 body {
   --background: #BFEDEF;
@@ -152,7 +152,7 @@ pre > code {
 }
 
 .footer-text {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto Mono", "IBM Plex Mono", monospace;
   float: right;
   padding-right: 20px;
 }
@@ -375,7 +375,7 @@ kbd {
   border-right-color: transparent !important;
   border-bottom-color: transparent !important;
   bottom: -5px;
-  left: calc(50% - 5px);
+  left: calc(50% - 10px);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -390,7 +390,7 @@ kbd {
   border-right-color: transparent !important;
   border-top-color: transparent !important;
   top: -5px;
-  left: calc(50% - 5px);
+  left: calc(50% - 10px);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -405,7 +405,7 @@ kbd {
   border-top-color: transparent !important;
   border-bottom-color: transparent !important;
   left: -5px;
-  top: calc(50% - 5px);
+  top: calc(50% - 10px);
   margin-left: 0;
   margin-right: 0;
 }
@@ -420,7 +420,7 @@ kbd {
   border-right-color: transparent !important;
   border-bottom-color: transparent !important;
   right: -5px;
-  top: calc(50% - 5px);
+  top: calc(50% - 10px);
   margin-left: 0;
   margin-right: 0;
 }

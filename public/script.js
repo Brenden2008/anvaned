@@ -161,6 +161,9 @@ Vue.component("theme", {
       }
       this.darktheme = true;
     }
+  },
+  mounted: function() {
+    this.dark();
   }
 });
 
@@ -172,7 +175,7 @@ if (!localStorage.getItem("markdown")) {
 }
 
 Vue.component("mdhtml", {
-  template: `<div><textarea id="md-editor" v-model="md" v-on:keyup="convert"></textarea><div id="md-html" v-html="html"></div></div>`,
+  template: `<div><textarea id="md-editor" v-model="md" v-on:keyup="convert" placeholder="🔮 enter markdown here..."></textarea><div id="md-html" v-html="html"></div></div>`,
   data() {
     return {
       md: localstorage || "",
