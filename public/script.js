@@ -187,6 +187,9 @@ Vue.component("mdhtml", {
       this.html = marked(this.md);
       localStorage.setItem("markdown", this.md);
     },
+  },
+  mounted: function() {
+    this.convert();
   }
 })
 
