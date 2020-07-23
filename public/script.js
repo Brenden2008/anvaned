@@ -137,14 +137,14 @@ Vue.component("theme", {
       for (let i = 0; i < c.length; i++) {
         c[i].style.backgroundColor = "var(--background)";
       }
-      var b = document.querySelectorAll("blockquote");
-      for (let i = 0; i < b.length; i++) {
-        b[i].style.backgroundColor = "var(--background)";
-      }
       this.darktheme = false;
     },
     dark() {
       document.getElementById("toggle").innerText = "🌞";
+      var b = document.querySelectorAll("blockquote > p");
+      for (let i = 0; i < b.length; i++) {
+        b[i].style.color = "black";
+      }
       document.body.style.backgroundColor = "var(--background-dark)";
       document.getElementById('github-down-pop').style.backgroundColor = "var(--background-dark)";
       document.getElementsByClassName('sign-in')[0].style.backgroundColor = "var(--background-dark)";
@@ -176,11 +176,6 @@ Vue.component("theme", {
       var c = document.querySelectorAll(".cancel");
       for (let i = 0; i < c.length; i++) {
         c[i].style.backgroundColor = "var(--background-dark)";
-      }
-      var b = document.querySelectorAll("blockquote");
-      for (let i = 0; i < b.length; i++) {
-        b[i].style.backgroundColor = "var(--background-dark)";
-        b[i].style.color = "var(--background-dark)";
       }
       this.darktheme = true;
     }
