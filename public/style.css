@@ -332,7 +332,6 @@ blockquote {
 
 #github-down-pop {
   z-index: 100;
-  position: fixed;
   background-color: var(--background);
   border-radius: 3px;
   border: 3px solid var(--border);
@@ -341,6 +340,7 @@ blockquote {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  line-height: 20px;
   width: 80%;
   margin-top: 15%;
   margin-left: 8vw;
@@ -354,6 +354,7 @@ blockquote {
     0 0px 80px rgba(0, 0, 0, 0.1)
   ;
   font-family: "Helvetica", "Arial", sans-serif;
+  margin-bottom: 100px;
 }
 
 
@@ -500,4 +501,10 @@ kbd {
 #github-logo {
   height: 50px !important;
   width: 50px !important;
+}
+
+#sign-in {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 
 }

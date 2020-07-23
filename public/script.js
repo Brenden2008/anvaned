@@ -105,6 +105,7 @@ Vue.component("theme", {
     light() {
       document.getElementById("toggle").innerText = "🌙";
       document.body.style.backgroundColor = "var(--background)";
+      document.getElementById('github-down-pop').style.backgroundColor = "var(--background)";
       document.body.style.color = "var(--forground)";
       var x = document.getElementsByTagName("button");
       for (let i = 0; i < x.length; i++) {
@@ -134,6 +135,7 @@ Vue.component("theme", {
     dark() {
       document.getElementById("toggle").innerText = "🌞";
       document.body.style.backgroundColor = "var(--background-dark)";
+      document.getElementById('github-down-pop').style.backgroundColor = "var(--background-dark)";
       document.body.style.color = "var(--forground-dark)";
       var x = document.getElementsByTagName("button");
       for (let i = 0; i < x.length; i++) {
