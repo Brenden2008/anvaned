@@ -114,6 +114,11 @@
             <br><br>
             Alternatively, you can download the Markdown content as a <code @click="download('markdown.md', editor);">.md</code>, <code @click="download('markdown.txt', editor);">.txt</code> or a <code @click="download('markdown.pdf', editor);">.pdf</code> file.
           </p>
+          
+          <button class="cancel" @click="cancel">
+            Cancel...
+          </button>
+          
         </div>
       </div>
       
@@ -129,7 +134,11 @@
             </p>
             
             <button class="sign-in">
-              Sign in with GitHub
+              <i class="devicon-github-plain"></i> Sign in with GitHub
+            </button>
+            
+            <button class="cancel" @click="cancel">
+              Cancel...
             </button>
             
           </center>

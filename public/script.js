@@ -106,6 +106,9 @@ Vue.component("theme", {
       document.getElementById("toggle").innerText = "🌙";
       document.body.style.backgroundColor = "var(--background)";
       document.getElementById('github-down-pop').style.backgroundColor = "var(--background)";
+      document.getElementsByClassName('sign-in')[0].style.backgroundColor = "var(--background)";
+      document.getElementsByClassName('cancel')[0].style.backgroundColor = "var(--background)";
+      document.getElementsByClassName('cancel')[0].style.backgroundColor = "var(--background)";
       document.body.style.color = "var(--forground)";
       var x = document.getElementsByTagName("button");
       for (let i = 0; i < x.length; i++) {
@@ -130,12 +133,17 @@ Vue.component("theme", {
       for (let i = 0; i < p.length; i++) {
         p[i].style.color = "var(--foreground)";
       }
+      var c = document.querySelectorAll(".cancel");
+      for (let i = 0; i < c.length; i++) {
+        c[i].style.backgroundColor = "var(--background)";
+      }
       this.darktheme = false;
     },
     dark() {
       document.getElementById("toggle").innerText = "🌞";
       document.body.style.backgroundColor = "var(--background-dark)";
       document.getElementById('github-down-pop').style.backgroundColor = "var(--background-dark)";
+      document.getElementsByClassName('sign-in')[0].style.backgroundColor = "var(--background-dark)";
       document.body.style.color = "var(--forground-dark)";
       var x = document.getElementsByTagName("button");
       for (let i = 0; i < x.length; i++) {
@@ -160,6 +168,10 @@ Vue.component("theme", {
       var p = document.querySelectorAll("p");
       for (let i = 0; i < p.length; i++) {
         p[i].style.color = "white";
+      }
+      var c = document.querySelectorAll(".cancel");
+      for (let i = 0; i < c.length; i++) {
+        c[i].style.backgroundColor = "var(--background-dark)";
       }
       this.darktheme = true;
     }
@@ -200,8 +212,8 @@ Vue.component("download", {
   data() {
     return {
       visible: false,
-      // editor: document.getElementById('md-editor').value,
-      // html: document.getElementById('md-html').innerHTML
+      editor: document.getElementById('md-editor').value,
+      html: document.getElementById('md-html').innerHTML
     };
   },
   methods: {
@@ -270,6 +282,10 @@ var app = new Vue({
     hidegithub() {
       document.getElementById("github-modal-background").style.display = "none";
       this.visible = false;
+    },
+    cancel() {
+      document.getElementById("github-modal-background").style.display = "none";
+      document.getElementById("modal-background").style.display = "none";
     }
   }
 });

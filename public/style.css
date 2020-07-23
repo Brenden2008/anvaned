@@ -503,8 +503,16 @@ kbd {
   width: 50px !important;
 }
 
-#sign-in {
+.sign-in {
   padding: 10px 20px;
   border-radius: 3px;
-  border: 
+  border: 3px solid var(--border);
+  background-color: var(--background);
+}
+
+.cancel {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 3px solid var(--border);
+  background-color: var(--background);
 }
