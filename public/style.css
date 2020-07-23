@@ -293,7 +293,6 @@ blockquote {
 
 #down-pop {
   z-index: 100;
-  position: fixed;
   background-color: var(--background);
   border-radius: 3px;
   border: 3px solid var(--border);
@@ -315,6 +314,7 @@ blockquote {
     0 0px 80px rgba(0, 0, 0, 0.1)
   ;
   font-family: "Helvetica", "Arial", sans-serif;
+  margin-bottom: 100px;
 }
 
 #github-modal-background {
@@ -355,14 +355,6 @@ blockquote {
   ;
   font-family: "Helvetica", "Arial", sans-serif;
   margin-bottom: 100px;
-}
-
-
-
-.right {
-  float: right;
-  width: 400px;
-  line-height: 1.5;
 }
 
 kbd {

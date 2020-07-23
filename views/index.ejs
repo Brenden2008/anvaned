@@ -103,21 +103,23 @@
       
       <div id="modal-background">
         <div id="down-pop">
-          <h3>
-            Download
-          </h3>
-          <p>
-            Markdown
-          </p>
-          <p class="right">
-            Download the rendered HTML as a <code @click="download('html.html', html);">.html</code> file, <code @click="download('html.txt', html);">.txt</code> or a <code @click="download('html.pdf', html);">.pdf</code> file.
-            <br><br>
-            Alternatively, you can download the Markdown content as a <code @click="download('markdown.md', editor);">.md</code>, <code @click="download('markdown.txt', editor);">.txt</code> or a <code @click="download('markdown.pdf', editor);">.pdf</code> file.
-          </p>
           
-          <button class="cancel" @click="cancel">
-            Cancel...
-          </button>
+          <center>
+            
+            <h1>
+              Download MD/HTML
+            </h1>
+            <p class="right">
+              Download the rendered HTML as a <code @click="download('html.html', html);" class="download-option">.html</code> file, <code @click="download('html.txt', html);" class="download-option">.txt</code> or a <code @click="download('html.pdf', html);" class="download-option">.pdf</code> file.
+              <br><br>
+              Alternatively, you can download the Markdown content as a <code @click="download('markdown.md', editor);" class="download-option">.md</code>, <code @click="download('markdown.txt', editor);" class="download-option">.txt</code> or a <code @click="download('markdown.pdf', editor);" class="download-option">.pdf</code> file.
+            </p>
+            
+            <button class="cancel" @click="cancel">
+              Cancel...
+            </button>
+            
+          </center>
           
         </div>
       </div>
