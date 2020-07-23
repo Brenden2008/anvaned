@@ -220,6 +220,7 @@ var app = new Vue({
     return {
       hidehtmltext: "Hide",
       hidemdtext: "Hide",
+      visible: false,
     };
   },
   methods: {
@@ -259,6 +260,14 @@ var app = new Vue({
     showmd() {
       this.hidemdtext = "Hide";
       document.getElementById("md-editor").style.display = "inline-block";
+    },
+    showgithub() {
+      document.getElementById("github-modal-background").style.display = "block";
+      this.visible = true;
+    },
+    hidegithub() {
+      document.getElementById("github-modal-background").style.display = "none";
+      this.visible = false;
     }
   }
 });

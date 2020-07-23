@@ -85,7 +85,7 @@
         <markdown_el element="A" insertel="a" tooltip="Insert link"></markdown_el>
         <download></download>
         <theme></theme>
-        <button id="github-login">
+        <button id="github-login"  @click="visible === false ? showgithub() : hidegithub()">
           <i class="devicon-github-plain"></i>
         </button>
       </div>
@@ -114,6 +114,20 @@
             <br><br>
             Alternatively, you can download the Markdown content as a <code @click="download('markdown.md', editor);">.md</code>, <code @click="download('markdown.txt', editor);">.txt</code> or a <code @click="download('markdown.pdf', editor);">.pdf</code> file.
           </p>
+        </div>
+      </div>
+      
+      <div id="github-modal-background">
+        <div id="github-down-pop">
+          <center>
+            <h2>
+              Add To Your GitHub Repo
+            </h2>
+            
+            <p>
+              
+            </p>
+          </center>
         </div>
       </div>
       
