@@ -256,7 +256,10 @@ table tbody > tr:last-child > td {
 blockquote {
   border-left: 5px solid var(--border);
   background-color: #ff9494;
-  padding-top: 10px 15px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   font-family: "Inter", sans-serif;
   border-radius: 5px;
   margin-left: 0px;
