@@ -13,7 +13,8 @@ const assets = [
   'https://rsms.me/inter/inter.css',
   'https://fonts.gstatic.com/s/ibmplexmono/v5/-F6qfjptAgt5VM-kVkqdyU8n3oQIwlBFgg.woff2',
   'https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap',
-  'https://markme.glitch.me/manifest.json'
+  'https://markme.glitch.me/manifest.json',
+  'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap'
 ];
 
 self.addEventListener('install', evt => {

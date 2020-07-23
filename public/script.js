@@ -137,6 +137,10 @@ Vue.component("theme", {
       for (let i = 0; i < c.length; i++) {
         c[i].style.backgroundColor = "var(--background)";
       }
+      var b = document.querySelectorAll("blockquote");
+      for (let i = 0; i < b.length; i++) {
+        b[i].style.backgroundColor = "var(--background)";
+      }
       this.darktheme = false;
     },
     dark() {
@@ -172,6 +176,11 @@ Vue.component("theme", {
       var c = document.querySelectorAll(".cancel");
       for (let i = 0; i < c.length; i++) {
         c[i].style.backgroundColor = "var(--background-dark)";
+      }
+      var b = document.querySelectorAll("blockquote");
+      for (let i = 0; i < b.length; i++) {
+        b[i].style.backgroundColor = "var(--background-dark)";
+        b[i].style.color = "var(--background-dark)";
       }
       this.darktheme = true;
     }
