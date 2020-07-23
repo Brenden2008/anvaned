@@ -212,8 +212,6 @@ Vue.component("download", {
   data() {
     return {
       visible: false,
-      editor: document.getElementById('md-editor').value,
-      html: document.getElementById('md-html').innerHTML
     };
   },
   methods: {
@@ -225,7 +223,7 @@ Vue.component("download", {
       document.getElementById("modal-background").style.display = "none";
       this.visible = false;
     }
-  }
+  },
 });
 
 var app = new Vue({
@@ -235,6 +233,8 @@ var app = new Vue({
       hidehtmltext: "Hide",
       hidemdtext: "Hide",
       visible: false,
+      editor: "",
+      html: ""
     };
   },
   methods: {
@@ -287,5 +287,9 @@ var app = new Vue({
       document.getElementById("github-modal-background").style.display = "none";
       document.getElementById("modal-background").style.display = "none";
     }
+  },
+  mounted: function() {
+    this.editor = document.getElementById('md-editor').value;
+    this.html = document.getElementById('md-html').innerHTML;
   }
 });
