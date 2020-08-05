@@ -105,8 +105,6 @@ Vue.component("theme", {
     light() {
       document.getElementById("toggle").innerText = "🌙";
       document.body.style.backgroundColor = "var(--background)";
-      document.getElementById('github-down-pop').style.backgroundColor = "var(--background)";
-      document.getElementsByClassName('sign-in')[0].style.backgroundColor = "var(--background)";
       document.getElementsByClassName('cancel')[0].style.backgroundColor = "var(--background)";
       document.getElementsByClassName('cancel')[0].style.backgroundColor = "var(--background)";
       document.body.style.color = "var(--forground)";
@@ -146,8 +144,6 @@ Vue.component("theme", {
         b[i].style.color = "black";
       }
       document.body.style.backgroundColor = "var(--background-dark)";
-      document.getElementById('github-down-pop').style.backgroundColor = "var(--background-dark)";
-      document.getElementsByClassName('sign-in')[0].style.backgroundColor = "var(--background-dark)";
       document.body.style.color = "var(--forground-dark)";
       var x = document.getElementsByTagName("button");
       for (let i = 0; i < x.length; i++) {
