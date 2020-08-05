@@ -275,16 +275,7 @@ var app = new Vue({
       this.hidemdtext = "Hide";
       document.getElementById("md-editor").style.display = "inline-block";
     },
-    showgithub() {
-      document.getElementById("github-modal-background").style.display = "block";
-      this.visible = true;
-    },
-    hidegithub() {
-      document.getElementById("github-modal-background").style.display = "none";
-      this.visible = false;
-    },
     cancel() {
-      document.getElementById("github-modal-background").style.display = "none";
       document.getElementById("modal-background").style.display = "none";
     }
   },
