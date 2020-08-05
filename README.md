@@ -56,3 +56,20 @@ This project uses Semantic Versioning. For more info on release, see [https://gi
 * Thanks to [Liyas Thomas](https://liyasthomas.web.app) for her support and encouragement in this project
 * CSS Tricks (https://css-tricks.com/build-word-counter-app/) for the code of word and character count
 * And to all whose code I have used
+
+<!-- Copy and Paste Me -->
+
+
+
+  
+
+
+
+    
+
+
+
+
+
+  
+
