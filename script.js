@@ -256,15 +256,15 @@ var app = new Vue({
     hidehtml() {
       this.hidehtmltext = "Show";
       document.getElementById("md-html").style.display = "none";
-      document.getElementById("md-editor").style.width = "100%";
-      document.getElementById("md-editor").style.borderRight = "none";
+      // document.getElementById("md-editor").style.width = "100%";
+      // document.getElementById("md-editor").style.borderRight = "none";
       
     },
     showhtml() {
       this.hidehtmltext = "Hide";
       document.getElementById("md-html").style.display = "inline-block";  
-      document.getElementById("md-editor").style.width = "50%";
-      document.getElementById("md-editor").style.borderRight = "1px dashed var(--border)";
+      // document.getElementById("md-editor").style.width = "50%";
+      // document.getElementById("md-editor").style.borderRight = "1px dashed var(--border)";
     },
     hidemd() {
       this.hidemdtext = "Show";
