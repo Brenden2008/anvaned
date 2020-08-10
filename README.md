@@ -1,9 +1,15 @@
-# MarkMe!
+<img src="https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2Fmarkme-banner.png?v=1597063516762">
 
-A simple, lightweight and beautiful Markdown editor and viewer.
+<div align="center">
 
-![MarkMe!](https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2Fmarkme-light.png?v=1589097625997)
-![MarkMe!](https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2Fmarkme-dark.png?v=1589097862504)
+  <h1>MarkMe!</h1>
+
+  A simple, lightweight and beautiful Markdown editor and viewer.
+
+</div>
+
+![MarkMe!](https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2FScreen%20Shot%202020-08-10%20at%204.47.23%20PM.png?v=1597063711106)
+![MarkMe!](https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2FScreen%20Shot%202020-08-10%20at%204.48.03%20PM.png?v=1597063715232)
 
 ## Features
 
