@@ -174,6 +174,44 @@ Vue.component("theme", {
         c[i].style.backgroundColor = "var(--background-dark)";
       }
       this.darktheme = true;
+    },
+    theme3() {
+      document.getElementById("toggle").innerText = "🌞";
+      var b = document.querySelectorAll("blockquote > p");
+      for (let i = 0; i < b.length; i++) {
+        b[i].style.color = "black";
+      }
+      document.body.style.backgroundColor = "var(--background-dark)";
+      document.body.style.color = "var(--forground-dark)";
+      var x = document.getElementsByTagName("button");
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "var(--background-dark)";
+      }
+      document.getElementById("md-editor").style.backgroundColor =
+        "var(--background-dark)";
+      document.getElementById("down-pop").style.backgroundColor =
+        "var(--background-dark)";
+      document.getElementById("md-editor").style.color =
+        "var(--foreground-dark)";
+      document.getElementById("md-html").style.backgroundColor =
+        "var(--background-dark)";
+      document.getElementById("md-html").style.color = "var(--foreground-dark)";
+      document.querySelector("footer").style.backgroundColor =
+        "var(--background-dark)";
+      document.querySelector("footer").style.color = "var(--foreground-dark)";
+      var x = document.getElementsByTagName("a");
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.color = "var(--foreground-dark)";
+      }
+      var p = document.querySelectorAll("p");
+      for (let i = 0; i < p.length; i++) {
+        p[i].style.color = "white";
+      }
+      var c = document.querySelectorAll(".cancel");
+      for (let i = 0; i < c.length; i++) {
+        c[i].style.backgroundColor = "var(--background-dark)";
+      }
+      this.darktheme = true;
     }
   },
   mounted: function() {

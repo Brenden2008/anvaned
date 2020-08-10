@@ -10,6 +10,9 @@ body {
   --test: black;
   --border: #ff6b6b;
   --border-dark: #00F5D4;
+  --theme3-back: white;
+  --theme3-font: black;
+  --theme3-border: black;
   background-color: var(--background);
   overflow: auto;
 }
