@@ -394,6 +394,7 @@ kbd {
 .tooltip {
   display: block !important;
   z-index: 10000;
+  margin-top: -30px;
 }
  
 .tooltip .tooltip-inner {

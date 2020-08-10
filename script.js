@@ -181,27 +181,27 @@ Vue.component("theme", {
       for (let i = 0; i < b.length; i++) {
         b[i].style.color = "black";
       }
-      document.body.style.backgroundColor = "var(--background-dark)";
-      document.body.style.color = "var(--forground-dark)";
+      document.body.style.backgroundColor = "var(--theme3-back)";
+      document.body.style.color = "var(--theme3-font)";
       var x = document.getElementsByTagName("button");
       for (let i = 0; i < x.length; i++) {
-        x[i].style.backgroundColor = "var(--background-dark)";
+        x[i].style.backgroundColor = "var(--theme3-back)";
       }
       document.getElementById("md-editor").style.backgroundColor =
-        "var(--background-dark)";
+        "var(--theme3-back)";
       document.getElementById("down-pop").style.backgroundColor =
-        "var(--background-dark)";
+        "var(--theme3-back)";
       document.getElementById("md-editor").style.color =
-        "var(--foreground-dark)";
+        "var(--theme3-font)";
       document.getElementById("md-html").style.backgroundColor =
-        "var(--background-dark)";
-      document.getElementById("md-html").style.color = "var(--foreground-dark)";
+        "var(--theme3-back)";
+      document.getElementById("md-html").style.color = "var(--theme3-font)";
       document.querySelector("footer").style.backgroundColor =
-        "var(--background-dark)";
-      document.querySelector("footer").style.color = "var(--foreground-dark)";
+        "var(--theme3-back)";
+      document.querySelector("footer").style.color = "var(--theme3-font)";
       var x = document.getElementsByTagName("a");
       for (let i = 0; i < x.length; i++) {
-        x[i].style.color = "var(--foreground-dark)";
+        x[i].style.color = "var(--theme3-font)";
       }
       var p = document.querySelectorAll("p");
       for (let i = 0; i < p.length; i++) {
@@ -209,7 +209,11 @@ Vue.component("theme", {
       }
       var c = document.querySelectorAll(".cancel");
       for (let i = 0; i < c.length; i++) {
-        c[i].style.backgroundColor = "var(--background-dark)";
+        c[i].style.backgroundColor = "var(--theme3-back)";
+      }
+      var b = document.querySelectorAll("button");
+      for (let i = 0; i < b.length; i++) {
+        b[i].style.color = "var(--theme3-font)";
       }
       this.darktheme = true;
     }
