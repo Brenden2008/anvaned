@@ -101,7 +101,6 @@ textarea:click {
   font-size: 24px;
   outline: none;
   display: inline-block;
-  height: 50px;
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
@@ -124,14 +123,26 @@ p {
     display: block;
     width: 100%;
     margin: 0px;
-    height: 100px;
+    height: 50vh;
+    padding: 0px;
   }
   #md-html {
     border-top: 1px dashed var(--border);
     display: block;
     width: 100%;
     margin: 0px;
-    height: 100px;
+    height: 50vh;
+    padding: 0px;
+  }
+  #mdel {
+    margin: 0px;
+  }
+  #app {
+    margin: 0px;
+    padding: 0px;
+  }
+  footer {
+    margin: 0px;
   }
 }
 
