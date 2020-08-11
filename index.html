@@ -89,16 +89,7 @@
         </button>
       </div>
 
-<!--       <div id="down-pop">
-          <button @click="download('markdown.txt', editor.value);">
-            MARKDOWN
-          </button>
-          <button
-            @click="download('html.txt', document.getElementById('md-html').innerHTML);"
-          >
-            HTML
-          </button>
-        </div> -->
+      <mdhtml></mdhtml>
       
       <div id="modal-background">
         <div id="down-pop">
@@ -122,11 +113,6 @@
           
         </div>
       </div>
-      
-      <!-- Add line breaks forever -->
-      <br /><br />
-
-      <mdhtml></mdhtml>
 
       <footer>
         <span
@@ -207,6 +193,11 @@
           hljs.highlightBlock(pres[i]);
         }
       };
+      
+      $('#md-editor').on('scroll', function () {
+        console.log("scrolling")
+        $('#md-html').scrollTop($(this).scrollTop());
+      });
     </script>
   </body>
 </html>
