@@ -43,4 +43,4 @@
 
 This is just a side-project I did, I learnt a lot from creating this web project. 
 
-Made with Vue & [Glitch](https;//glitch.com)
+Made with Vue & [Glitch](https://glitch.com)
