@@ -129,19 +129,17 @@
       <mdhtml></mdhtml>
 
       <footer>
-        <span class="markme">
-          MARKME!
-        </span>
         <span
           class="center"
-          style="background-color:var(--border)"
+          style="border-bottom:1px solid var(--border)"
           @click="hidemdtext === 'Hide' ? hidemd() : showmd()"
         >
           {{hidemdtext}} Markdown
         </span>
+        &nbsp;
         <span
           class="center"
-          style="background-color:var(--border)"
+          style="border-bottom:1px solid var(--border)"
           @click="hidehtmltext === 'Hide' ? hidehtml() : showhtml()"
         >
           {{hidehtmltext}} HTML
@@ -199,7 +197,7 @@
         var words = document
           .getElementById("md-html")
           .innerText.match(/\b[-?(\w+)?]+\b/gi);
-        if (words = "") {
+        if (words === "") {
           document.getElementById("words").innerText = 0 + " words";  
         } else {
           document.getElementById("words").innerText = words.length + " words";
