@@ -5,7 +5,11 @@
   <h1>MarkMe!</h1>
 
   A simple, lightweight and beautiful Markdown editor and viewer.
-
+  
+  <a title="MadeWithVueJs.com Shield" href="https://madewithvuejs.com/p/markme/shield-link"><img src="https://madewithvuejs.com/storage/repo-shields/2535-shield.svg"/></a>
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/khalby786/markme">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/khalby786/markme">
+  
 </div>
 
 ![MarkMe!](https://cdn.glitch.com/e0b394db-80ae-4783-a487-56cecfa7615a%2FScreen%20Shot%202020-08-10%20at%204.47.23%20PM.png?v=1597063711106)
