@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 button {
   background-color: var(--background);
   border: none;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Inter", sans-serif, "IBM Plex Mono", monospace;
   font-size: 1.5em;
   color: var(--border);
   margin-left: 20px;
