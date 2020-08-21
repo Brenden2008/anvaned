@@ -540,3 +540,10 @@ kbd {
   font-family: "IBM Plex Mono", monospace;
   cursor: pointer;
 }
+
+#icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 5px;
+}
