@@ -14,7 +14,13 @@ const assets = [
   'https://fonts.gstatic.com/s/ibmplexmono/v5/-F6qfjptAgt5VM-kVkqdyU8n3oQIwlBFgg.woff2',
   'https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap',
   'https://markme.glitch.me/manifest.json',
+  'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap',
+  'https://cdn.jsdelivr.net/npm/vue',
+  'https://unpkg.com/v-tooltip',
+  'https://cdn.jsdelivr.net/npm/dompurify@2.0.12/dist/purify.min.js',
+  'https://fonts.googleapis.com/css2?family=Poppins&display=swap',
   'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap'
+  
 ];
 
 self.addEventListener('install', evt => {

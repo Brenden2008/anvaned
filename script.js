@@ -236,12 +236,12 @@ Vue.component("mdhtml", {
   data() {
     return {
       md: localstorage || "",
-      html: marked(localstorage) || ""
+      html: DOMPurify.sanitize(marked(localstorage)) || ""
     };
   },
   methods: {
     convert() {
-      this.html = marked(this.md);
+      this.html = DOMPurify.sanitize(marked(this.md));
       localStorage.setItem("markdown", this.md);
     },
   },

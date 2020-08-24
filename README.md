@@ -36,13 +36,15 @@
 
 - **Real time viewer** 🕶️ - view changes as you type
 
+- **Sanitises** 🧹 your HTML output code and removes harmful HTML to prevent XSS attacks 
+
 ## To-do
 
 - [ ] PWA & offline support (the code to do this is present, but randomly it doesn't work on specific devices)
 - [ ] Mobile responsiveness (doing)
 - [X] Dark theme
 - [X] Download markdown & html in various file formats
-- [ ] Sanitise HTML to prevent XSS and other dangerous stuff.
+- [X] Sanitise HTML to prevent XSS and other dangerous stuff.
 - [ ] Sync scrolling
 
 ## License
