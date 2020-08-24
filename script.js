@@ -243,7 +243,7 @@ Vue.component("mdhtml", {
     convert() {
       let uglyhtml = DOMPurify.sanitize(marked(this.md));
       let prettified = prettier.format(uglyhtml, {
-        // parser: "babel",
+        parser: "html",
         // plugins: prettierPlugins,
       });
       this.html = prettified;
