@@ -38,6 +38,12 @@
 
 - **Sanitises** 🧹 your HTML output code and removes harmful HTML to prevent XSS attacks 
 
+- Supports **GitHub-flavoured** markdown
+
+- Output HTML is **beautified** 🖌️ using **Prettier**
+
+- **Installable PWA** - install on desktop or mobile [*BETA*]
+
 ## To-do
 
 - [ ] PWA & offline support (the code to do this is present, but randomly it doesn't work on specific devices)

@@ -246,6 +246,8 @@ Vue.component("mdhtml", {
         parser: "html",
         plugins: prettierPlugins,
       });
+      console.log(uglyhtml);
+      console.log(prettified);
       this.html = prettified;
       localStorage.setItem("markdown", this.md);
     },
