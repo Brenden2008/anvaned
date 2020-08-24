@@ -42,7 +42,7 @@
 
 - Output HTML is **beautified** 🖌️ using **Prettier**
 
-- **Installable PWA** - install on desktop or mobile [*BETA*]
+- **Installable PWA** 💾 - install on desktop or mobile [*BETA*]
 
 ## To-do
 
