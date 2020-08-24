@@ -241,7 +241,13 @@ Vue.component("mdhtml", {
   },
   methods: {
     convert() {
-      this.html = DOMPurify.sanitize(marked(this.md));
+      let uglyhtml = DOMPurify.sanitize(marked(this.md));
+      let prettified = prettier.format(uglyhtml, {
+        // parser: "babel",
+        // plugins: prettierPlugins,
+      });
+      this.html = prettified;
+      console.log(prettified);
       localStorage.setItem("markdown", this.md);
     },
   },
