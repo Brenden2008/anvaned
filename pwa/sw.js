@@ -22,7 +22,8 @@ const assets = [
   'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap',
   'https://unpkg.com/prettier@2.0.5/standalone.js',
   'https://unpkg.com/prettier@2.0.5/parser-html.js',
-  'https://cdn.jsdelivr.net/gh/kyle-rb/simplecopy/simplecopy.min.js'
+  'https://cdn.jsdelivr.net/gh/kyle-rb/simplecopy/simplecopy.min.js',
+  'https://kit.fontawesome.com/98f54f160f.js'
   
 ];
 
