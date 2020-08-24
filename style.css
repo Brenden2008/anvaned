@@ -416,13 +416,12 @@ kbd {
 .tooltip {
   display: block !important;
   z-index: 10000;
-  margin-top: 40px;
 }
  
 .tooltip .tooltip-inner {
   background: black;
   color: white;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 5px 10px 4px;
   font-family: "Inter", "Helvetica", sans-serif;
 }
@@ -433,7 +432,6 @@ kbd {
   border-style: solid;
   position: absolute;
   margin: 5px;
-  border-color: black;
   z-index: 1;
 }
  
