@@ -19,7 +19,10 @@ const assets = [
   'https://unpkg.com/v-tooltip',
   'https://cdn.jsdelivr.net/npm/dompurify@2.0.12/dist/purify.min.js',
   'https://fonts.googleapis.com/css2?family=Poppins&display=swap',
-  'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap'
+  'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap',
+  'https://unpkg.com/prettier@2.0.5/standalone.js',
+  'https://unpkg.com/prettier@2.0.5/parser-html.js',
+  'https://cdn.jsdelivr.net/gh/kyle-rb/simplecopy/simplecopy.min.js'
   
 ];
 

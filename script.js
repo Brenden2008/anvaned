@@ -249,6 +249,12 @@ Vue.component("mdhtml", {
       this.html = prettified;
       localStorage.setItem("markdown", this.md);
     },
+    copyhtml() {
+      simplecopy(this.html)
+    },
+    copymd() {
+      simplecopy(this.md)
+    }
   },
   mounted: function() {
     this.convert();
