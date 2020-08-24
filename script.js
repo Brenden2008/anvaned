@@ -244,10 +244,9 @@ Vue.component("mdhtml", {
       let uglyhtml = DOMPurify.sanitize(marked(this.md));
       let prettified = prettier.format(uglyhtml, {
         parser: "html",
-        // plugins: prettierPlugins,
+        plugins: prettierPlugins,
       });
       this.html = prettified;
-      console.log(prettified);
       localStorage.setItem("markdown", this.md);
     },
   },
