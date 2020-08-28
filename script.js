@@ -249,6 +249,11 @@ Vue.component("mdhtml", {
       console.log(uglyhtml);
       console.log(prettified);
       this.html = prettified;
+      
+      if (!('indexedDB' in window)) {
+        console.log('This browser doesn\'t support IndexedDB');
+      }
+      
       localStorage.setItem("markdown", this.md);
     },
     copyhtml() {
