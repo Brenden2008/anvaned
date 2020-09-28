@@ -4,7 +4,7 @@
 
   <h1>MarkMe!</h1>
 
-  A simple, lightweight and beautiful Markdown editor and viewer.
+  A simple, lightweight and beautiful online Markdown editor and viewer.
   
   <a title="MadeWithVueJs.com Shield" href="https://madewithvuejs.com/p/markme/shield-link"><img src="https://madewithvuejs.com/storage/repo-shields/2535-shield.svg"/></a>
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/khalby786/markme">
