@@ -265,9 +265,10 @@ Vue.component("mdhtml", {
   },
   mounted: function() {
     this.convert();
-    var editor = CodeMirror.fromTextArea(myTextarea, {
-      lineNumbers: true
-    });
+    var mdEditor = document.getElementById("md-editor");
+    // var editor = CodeMirror.fromTextArea(mdEditor, {
+    //   lineNumbers: true
+    // });
   }
 })
 
