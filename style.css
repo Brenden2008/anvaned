@@ -213,7 +213,7 @@ b,
 i,
 u,
 em {
-  color: black;
+  color: inherit;
 }
 
 img {
@@ -554,4 +554,12 @@ kbd {
   height: 50px;
   vertical-align: middle;
   border-radius: 5px;
+}
+
+aside {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 200px;
+  left: 0px;
 }
