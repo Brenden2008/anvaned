@@ -1,4 +1,4 @@
-Vue.use(VTooltip);
+// Vue.use(VTooltip);
 
 Vue.component("markdown_el", {
   template:
@@ -265,6 +265,9 @@ Vue.component("mdhtml", {
   },
   mounted: function() {
     this.convert();
+    var editor = CodeMirror.fromTextArea(myTextarea, {
+      lineNumbers: true
+    });
   }
 })
 
