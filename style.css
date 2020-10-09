@@ -554,6 +554,7 @@ kbd {
   height: 50px;
   vertical-align: middle;
   border-radius: 5px;
+  border-bottom: 0px solid var(--background);  
 }
 
 aside {
