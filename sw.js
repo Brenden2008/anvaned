@@ -1,3 +1,5 @@
+importScripts('https://arc.io/arc-sw-core.js');
+
 const staticCacheName = 'markme';
 const assets = [
   '/',
