@@ -4,13 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  --background: #BFEDEF;
-  --background-dark: #100e17;
+  --background: #000000;
+  --background-dark: #000000;
   --foreground: black;
   --foreground-dark: white;
   --test: black;
-  --border: #ff6b6b;
-  --border-dark: #00F5D4;
+  --border: #000000;
+  --border-dark: #000000;
   --theme3-back: white;
   --theme3-font: black;
   --theme3-border: black;
