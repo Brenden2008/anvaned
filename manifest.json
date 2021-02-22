@@ -1,6 +1,6 @@
 {
-  "name": "Doom 3",
-  "short_name": "Doom 3",
+  "name": "Ubuntu",
+  "short_name": "Ubuntu",
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",
@@ -39,12 +39,12 @@
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/230362f6-85a4-4266-ae32-101d0c675bb3%2FDoom3-a-icon.png?v=1611939129892",
+      "src": "https://cdn.glitch.com/6aea2096-ee27-4cdb-bf13-d3ad2dac6a15%2Fimages%20(3).png?v=1614004747600",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/230362f6-85a4-4266-ae32-101d0c675bb3%2FDoom3-a-icon.png?v=1611939129892",
+      "src": "https://cdn.glitch.com/6aea2096-ee27-4cdb-bf13-d3ad2dac6a15%2Fimages%20(3).png?v=1614004747600",
       "sizes": "512x512",
       "type": "image/png"
     }
