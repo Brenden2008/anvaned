@@ -1,6 +1,6 @@
 {
-  "name": "Windows 98",
-  "short_name": "Windows 98",
+  "name": "Linux Zoo",
+  "short_name": "Linux Zoo",
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",
@@ -8,43 +8,43 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "https://cdn.glitch.com/662453c5-1820-432b-8b6d-4b7889e37f21%2Fwindows-icon-png-5802.png?v=1614023406749",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/662453c5-1820-432b-8b6d-4b7889e37f21%2Fwindows-icon-png-5802.png?v=1614023406749",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/662453c5-1820-432b-8b6d-4b7889e37f21%2Fwindows-icon-png-5802.png?v=1614023406749",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "128x128",
       "type": "image/png"
     },
     
     {
-      "src": "https://cdn.glitch.com/662453c5-1820-432b-8b6d-4b7889e37f21%2Fwindows-icon-png-5802.png?v=1614023406749",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "../assets/icon-384x384.png",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/662453c5-1820-432b-8b6d-4b7889e37f21%2Fwindows-icon-png-5802.png?v=1614023406749",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/662453c5-1820-432b-8b6d-4b7889e37f21%2Fwindows-icon-png-5802.png?v=1614023406749",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/662453c5-1820-432b-8b6d-4b7889e37f21%2Fwindows-icon-png-5802.png?v=1614023406749",
+      "src": "https://cdn.glitch.com/04a3e7f0-2934-4d3e-902f-e4cc2dbc4eec%2F98d91f99-c0fa-4b6d-81d4-6b6a957b4bf5.image.png?v=1630588436800",
       "sizes": "512x512",
       "type": "image/png"
     }
